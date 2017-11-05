@@ -8,7 +8,7 @@
 *   4.class 类后面跟的自定义名称就是你的自定义组件的名称，暴露出去的名称也一定要保持一致，同时这一个名称也是你在其它组件里面用它的时候的标签名
 **/
 
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 class Hello extends Component {
   render() {
