@@ -16,7 +16,6 @@ export default class Hello extends Component {
   // changeValue = this.changeValue.bind(this)
 
   changeValue(e) {
-    console.log(e)
     this.setState({value: e.target.value})
   }
 
