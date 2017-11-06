@@ -7,7 +7,8 @@ import './index.css';
 // import Hello from './study/study-03/study-03'                                // 第3课
 // import Like from './study/study-04/study-04'                                 // 第4课
 // import Component from './study/study-05/study-05'                            // 第5课
-import Mixin from './study/study-06/study-06'                            // 第6课
+// import Mixin from './study/study-06/study-06'                                // 第6课
+import Clock from './study/study-07/study-07'                                // 第7课
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -16,5 +17,6 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<Hello />, document.getElementById('root'))                  // 第3课
 // ReactDOM.render(<Like />, document.getElementById('root'))                   // 第4课
 // ReactDOM.render(<Component />, document.getElementById('root'))              // 第5课
-ReactDOM.render(<Mixin />, document.getElementById('root'))              // 第6课
+// ReactDOM.render(<Mixin />, document.getElementById('root'))                  // 第6课
+ReactDOM.render(<Clock />, document.getElementById('root'))                  // 第6课
 registerServiceWorker();
