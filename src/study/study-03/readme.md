@@ -38,3 +38,6 @@
   changeValue = this.changeValue.bind(this)
 ```
 5. 类的方法内部中会有很多``this``，这些``this``默认是指向类的实例。但是当方法单独拿出来使用的时候，``this``的指向就变成了这个方法运行时所在的环境（就是跟之前一个普通的function方法的this指向一样），例如本例子（[study-03](https://github.com/daoyi7/r/blob/master/src/study/study-03/study-03.js)）中的``changeValue``方法，如果把它单独拿出来用的话，那么它指向的会是``input``，很显然对于我们这个例子是不对的。所以我们需要在构造方法中绑定这个``this``改变它的指向，这是一个最简单的方法了。
+
+
+参考阮一峰老师的es6入门：[http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class](http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class)
