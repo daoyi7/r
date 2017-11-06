@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 export default class Hello extends Component {
+  state
   constructor(props) {
     super(props)
     this.changeValue = this.changeValue.bind(this)
@@ -9,7 +10,13 @@ export default class Hello extends Component {
     }
   }
 
+  // state = {
+  //   value: 'World'
+  // }
+  // changeValue = this.changeValue.bind(this)
+
   changeValue(e) {
+    console.log(e)
     this.setState({value: e.target.value})
   }
 
