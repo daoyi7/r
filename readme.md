@@ -13,3 +13,6 @@
 - 11 分清组件和对象（es6类）的区别 [https://github.com/daoyi7/r/tree/master/src/study/study-11](https://github.com/daoyi7/r/blob/master/src/study/study-11/study-11.js)
 - 12 验证props的数据类型：propTypes [https://github.com/daoyi7/r/tree/master/src/study/study-12](https://github.com/daoyi7/r/blob/master/src/study/study-12/study-12.js)
 - 13 用``.map``方法来循环数据 [https://github.com/daoyi7/r/tree/master/src/study/study-13](https://github.com/daoyi7/r/blob/master/src/study/study-13/study-13.js)
+- 14 ``map``方法里的``key``到底有什么用 [https://github.com/daoyi7/r/tree/master/src/study/study-14](https://github.com/daoyi7/r/blob/master/src/study/study-14/study-14.js)
+- 15 解构赋值 [https://github.com/daoyi7/r/tree/master/src/study/study-15](https://github.com/daoyi7/r/blob/master/src/study/study-15/study-15.js)
+- 16 组件的双向绑定 [https://github.com/daoyi7/r/tree/master/src/study/study-16](https://github.com/daoyi7/r/blob/master/src/study/study-16/study-16.js)
