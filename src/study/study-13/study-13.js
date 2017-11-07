@@ -7,7 +7,8 @@ export default class ListWrap extends Component {
     return (
       <ul>
         {
-          this.props.children.map((child, index) => {
+          // this.props.children.map((child, index) => {
+          React.Children.map(this.props.children,(child, index) => {
           console.log(child)
           return <ListItem key = {index} text = {child} />
           })
