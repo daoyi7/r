@@ -1,6 +1,6 @@
 ## 第十课
 
-数据的单向传递,从父组件最开始携带的属性开始
+数据的单向传递,从父组件携带属性开始
 
 在入口文件[index.js](https://github.com/daoyi7/r/blob/master/src/index.js)中，组件``Parent``携带了属性``name``，那么当子组件``Child``需要用这个属性的时候，肯定是必须要用到前面所说的方法``props``啦。
 
