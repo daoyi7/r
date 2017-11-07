@@ -13,3 +13,28 @@
 
 
 > ``props``只能由``owner``传递，不能由``parent``传递
+
+举个例子：
+```javascript
+
+  class Msg extends Component {
+    render() {
+      return (
+        <div className="msg">
+          <span>123</san>
+        </div>
+      )
+    }
+  }
+
+  class Hello extends Component {
+    render() {
+      return (
+        <div className="hello">
+          <Msg />
+        </div>
+      )
+    }
+  }
+```
+这个例子里面，``<Msg />``和``<Hello />``都是react组件，其中``<Hello />``组件是``<Msg />``组件的``owner``。``<div className="hello">``是``<Msg />``组件的``parent``
