@@ -1,9 +1,13 @@
 import React, {Component} from 'react'
 
 class Message extends Component {
+  style = {
+    color: 'yellow'
+  }
+
   render() {
     return (
-      <p>My owner component is {this.props.master}, Now time is {this.props.time}, I like <span style={{color: this.props.color}}>{this.props.color}</span> color</p>
+      <p>My owner component is <span style={{color: this.style.color}}>{this.props.master}</span>, Now time is {this.props.time}, I like <span style={{color: this.props.color}}>{this.props.color}</span> color</p>
     )
   }
 }

@@ -2,7 +2,7 @@
 
 分清组件和对象（es6类）的区别
 
-在这个[例子](https://github.com/daoyi7/r/blob/master/src/study/study-10/study-10.js)里，有两个es6的类。在第三课讲到了，其实es6的类其实质上也是一个``function``,即它本质上还是一个对象。
+在这个[例子](https://github.com/daoyi7/r/blob/master/src/study/study-11/study-11.js)里，有两个es6的类。在第三课讲到了，其实es6的类其实质上也是一个``function``,即它本质上还是一个对象。
 
 
 第一个类是``Message``，第二个类是``Parent``。
