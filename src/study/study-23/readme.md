@@ -1,6 +1,6 @@
 ## 第二十三课
 
-``componentWillUnmount``
+``componentWillUnmount``组件的卸载
 
 [例子](https://github.com/daoyi7/r/blob/master/src/study/study-23/study-23.js)中的代码如果运行起来会 Warning ：
 ```
@@ -8,7 +8,7 @@ Warning: unmountComponentAtNode(): The node you're attempting to unmount was ren
 ```
 
 > 我们要移除的组件不是一个最高级别的组件。
-**移除组件的时候，只能在通过组件拥有者进行替换或者移除**
+**卸载组件的时候，只能在通过组件拥有者进行替换或者卸载**
 
 用另一种方法试一下：
 ```javascript

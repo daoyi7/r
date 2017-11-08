@@ -2,7 +2,7 @@
 
 ``this.setState()``
 
-首先看这个充满了``console.log()``的[例子](https://github.com/daoyi7/r/blob/master/src/study/study-23/study-23.js)
+首先看这个充满了``console.log()``的[例子](https://github.com/daoyi7/r/blob/master/src/study/study-24/study-24.js)
 
 有一个react组件叫做``App``,这个组件在由``class``变成组件经过了多个步骤，组件在数据发生变化的时候也有几个步骤，我在每一个步骤中都打印出了它的状态值，用来分析``this.setState()``到底是怎么干活的！
 
@@ -71,3 +71,6 @@
 总结一下：
 >1. ``this.setState()``方法不会立刻改变react组件中状态值，而是到渲染的时候才会改变
 2. ``this.setState()``方法改变了组件的状态值以后会导致组件的重新渲染，而不是仅仅改变组件的状态值。
+
+
+看看知乎里面的大神如何讲解的[https://zhuanlan.zhihu.com/p/25954470](https://zhuanlan.zhihu.com/p/25954470)
