@@ -27,7 +27,7 @@ class Parent extends Component {
 
   addCount() {
     this.setState({
-      count: ++this.state.count
+      count: this.state.count + 1
     })
   }
 
