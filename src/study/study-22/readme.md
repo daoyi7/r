@@ -4,7 +4,7 @@
 
 ``forceUpdate``也是更新阶段的一个方法，但它并不像前面四个那样必须。
 
-[例子](https://github.com/daoyi7/r/blob/master/src/study/study-19/study-19.js)中，我在一开始定义了一个变量``countTime``,其他的基本没怎么变化。
+[例子](https://github.com/daoyi7/r/blob/master/src/study/study-22/study-22.js)中，我在一开始定义了一个变量``countTime``,其他的基本没怎么变化。
 
 子组件更新之前，``countTime``自减，更新完毕以后，增加一个``setTimeout``定时器，在定时器里终于出现了我们的主角``forceUpdate``：
 

@@ -2,7 +2,7 @@
 
 ``shouldComponentUpdate``
 
-这个[例子](https://github.com/daoyi7/r/blob/master/src/study/study-19/study-19.js)跟例子19可以说非常类似了，只是在子组件里多加了一个``shouldComponentUpdate``方法。
+这个[例子](https://github.com/daoyi7/r/blob/master/src/study/study-20/study-20.js)跟例子19可以说非常类似了，只是在子组件里多加了一个``shouldComponentUpdate``方法。
 
 可以看到``shouldComponentUpdate``非常的简单，接受两个参数``nextProps``和``nextState``,分别表示接收到更新后的传递过来的数据和引起自身更新的新数据。然后``return true``
 
