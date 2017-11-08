@@ -17,7 +17,8 @@ import './index.css';
 // import ListWrap from './study/study-13/study-13'                             // 第13课
 // import Users from './study/study-14/study-14'                                // 第14课
 // import App from './study/study-15/study-15'                                  // 第15课
-import App from './study/study-16/study-16'                                // 第16课
+// import App from './study/study-16/study-16'                                  // 第16课
+import App from './study/study-17/study-17'                                // 第17课
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -36,5 +37,6 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<ListWrap><span>1</span><span>23432</span></ListWrap>, document.getElementById('root'))                  // 第13课
 // ReactDOM.render(<Users />, document.getElementById('root'))                  // 第14课
 // ReactDOM.render(<App />, document.getElementById('root'))                    // 第15课
-ReactDOM.render(<App />, document.getElementById('root'))                  // 第16课
+// ReactDOM.render(<App />, document.getElementById('root'))                    // 第16课
+ReactDOM.render(<App />, document.getElementById('root'))                  // 第17课
 registerServiceWorker();
