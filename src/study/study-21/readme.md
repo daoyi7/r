@@ -3,8 +3,8 @@
 ``componentWillUpdate``和``componentDidUpdate``
 
 捋一捋更新的四个API的先后顺序
-1. ``componentWillReceiveProps``  子组件收到``owner``或者数据更新后执行
-2. ``shouldComponentUpdate``      子组件收到``owner``或者数据更新后决定自身要不要随之更新
+1. ``componentWillReceiveProps``  子组件收到``owner``的数据更新后执行
+2. ``shouldComponentUpdate``      子组件收到数据更新后（并不是非得是``owner``传过来的，也可以是自己的）决定自身要不要随之更新
 3. ``componentWillUpdate``        子组件更新之前
 4. ``componentDidUpdate``         子组件更新之后
 

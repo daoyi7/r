@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 class Child extends Component {
 
-  state= {
+  state = {
     time: new Date().toTimeString()
   }
 
