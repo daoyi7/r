@@ -16,6 +16,12 @@ export default class App extends Component {
     })
   }
 
+  render() {
+    return (
+      <div>Look this state {this.state.count} !</div>
+    )
+  }
+
   componentDidMount() {
     setInterval(() => {
       this.setState({
@@ -24,11 +30,5 @@ export default class App extends Component {
         console.log('挂载到页面上')
       })
     }, 2000)
-  }
-
-  render() {
-    return (
-      <div>Look this state {this.state.count} !</div>
-    )
   }
 }

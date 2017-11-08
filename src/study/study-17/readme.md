@@ -7,18 +7,19 @@
 
 
 大致步骤：
-1. 实例化一个组件
+1. 实例化一个组件  ``constructor``
 2. 准备挂载  ``componentWillMount``
-3. 挂载到页面上  ``componentDidMount``
-4. 用户操作会影响组件，导致组件更新
-5. 操作导致数据更新
-6. 数据更新驱使DOM更新
-7. 卸载前
-8. 卸载后
+3. 挂载到页面上  ``render``
+4. 挂载到页面以后  ``componentDidMount``
+5. 用户操作会影响组件，导致组件更新
+6. 操作导致数据更新
+7. 数据更新驱使DOM更新
+8. 卸载前
+9. 卸载后
 
 组件的声明周期要分好几个例子，先看挂载阶段的[例子](https://github.com/daoyi7/r/blob/master/src/study/study-17/study-17.js)
 
-组件``<App />``在实例化的时候（即当它还只是一个``class``类的时候）,定一个了一个``state``,``state``里面有一个值``count = 0``.
+组件``<App />``在实例化的时候（实例化在``constructor``里面执行，我们用隐式方法没有写``constructor``并且把``state``拿到外头写了）,定一个了一个``state``,``state``里面有一个值``count = 0``.
 
 在``componentWillMount``组件挂载之前，用``this.setState``方法把``count``值从 0 改成了 1.
 
