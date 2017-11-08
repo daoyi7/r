@@ -21,3 +21,4 @@
 - 19 ``componentWillMount``的作用和``componentWillReceiveProps``是什么？ [https://github.com/daoyi7/r/tree/master/src/study/study-16](https://github.com/daoyi7/r/blob/master/src/study/study-19/study-19.js)
 - 20 ``shouldComponentUpdate`` [https://github.com/daoyi7/r/tree/master/src/study/study-16](https://github.com/daoyi7/r/blob/master/src/study/study-20/study-20.js)
 - 21 ``componentWillUpdate``和``componentDidUpdate`` [https://github.com/daoyi7/r/tree/master/src/study/study-16](https://github.com/daoyi7/r/blob/master/src/study/study-21/study-21.js)
+- 22 ``forceUpdate`` [https://github.com/daoyi7/r/tree/master/src/study/study-16](https://github.com/daoyi7/r/blob/master/src/study/study-22/study-22.js)
