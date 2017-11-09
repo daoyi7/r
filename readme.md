@@ -24,3 +24,5 @@
 - 22 ``forceUpdate`` [https://github.com/daoyi7/r/tree/master/src/study/study-22](https://github.com/daoyi7/r/blob/master/src/study/study-22/study-22.js)
 - 23 ``componentWillUnmount``组件的卸载 [https://github.com/daoyi7/r/tree/master/src/study/study-23](https://github.com/daoyi7/r/blob/master/src/study/study-23/study-23.js)
 - 24 ``this.setState()`` [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-24/study-24.js)
+- 25 react的ajax调用 [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-25/study-25.js)
+- 26 受控组件和非受控组件``controlled or uncontrolled`` [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-26/study-26.js)
