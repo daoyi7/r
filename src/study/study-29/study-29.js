@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <select value={this.state.s} onChange={this.changeFn} ref="myS" multiple={false}>
+        <select value={this.state.s} onChange={this.changeFn} ref="myS" multiple={true}>
           <option value='k'>kawhi</option>
           <option value='d'>duncan</option>
           <option value='m'>manu</option>
