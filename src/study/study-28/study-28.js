@@ -2,13 +2,12 @@ import React, {Component} from 'react'
 
 export default class App extends Component {
   state = {
-    name: 'kawhi'
+    name: ['kawhi']
   }
 
   checkChange = this.checkChange.bind(this)
 
   checkChange(e) {
-    debugger
     if(e.target.checked) {
       this.setState({
         name: e.target.value
@@ -21,7 +20,7 @@ export default class App extends Component {
     return (
       <div>
         <input type="checkbox" onChange = {this.checkChange} value='kobe' /><span>科比</span><br />
-        <input type="checkbox" onChange = {this.checkChange} value='gay' checked={this.state.name === 'kobe'} /><span>盖伊</span>
+        <input type="checkbox" onChange = {this.checkChange} value='gay' checked={this.state.name.indexOf('gay') > -1} /><span>盖伊</span>
       </div>
     )
   }
