@@ -26,3 +26,6 @@
 - 24 ``this.setState()`` [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-24/study-24.js)
 - 25 react的ajax调用 [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-25/study-25.js)
 - 26 受控组件和非受控组件``controlled or uncontrolled`` [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-26/study-26.js)
+- 27 ``textarea`` [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-27/study-27.js)
+- 28 元素的重排和重绘 [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-28/study-28.js)
+- 29 ``ref``有两种写法 [https://github.com/daoyi7/r/tree/master/src/study/study-24](https://github.com/daoyi7/r/blob/master/src/study/study-29/study-29.js)
