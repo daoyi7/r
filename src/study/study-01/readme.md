@@ -8,4 +8,4 @@
 3. ``render``完以后，一定要用``export default``把组件暴露出来，这样才能在其他文件中引入组件
 4. ``class``类后面跟的自定义名称就是你的自定义组件的名称，暴露出去的名称也尽量保持一致，同时这一个名称也是你在其它组件里面用它的时候的标签名
 5. 在``JSX``语法中要用``HTML``的``class``属性的时候应该写作``className``,用以区分``class``类
-6. JSX => JavaScript extend
+6. JSX => JavaScript 的语言扩展，实际上它是一个JavaScript对象，编译过后其实是``ReactDom.createElement()``

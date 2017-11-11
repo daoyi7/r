@@ -12,9 +12,9 @@ export default class App extends Component {
   render() {
     return (
       React.createElement(
-        'div',
-        {className:'app'},
-        '用createElement创建一个react组件',
+        'div',                                          // tags
+        {className:'app'},                              // attrs
+        '用createElement创建一个react组件',              // children
         <Child />
       )
     )
