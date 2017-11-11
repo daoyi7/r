@@ -14,12 +14,10 @@ class MyHello extends Component {
   }
 }
 
-class Hello extends Component {
+export default class Hello extends Component {
   render() {
     return (
       <MyHello {...props} />
     )
   }
 }
-
-export default Hello
