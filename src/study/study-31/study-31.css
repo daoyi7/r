@@ -9,3 +9,17 @@
 .title span {
   color:#fff;
 }
+
+.listWrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem h2 {
+  font-size: 14px;
+  color:#666;
+}
+.listItem p {
+  color:#eee;
+}

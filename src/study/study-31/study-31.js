@@ -12,6 +12,11 @@ class Header extends Component {
 }
 
 class ListWrap extends Component {
+
+  handleClick(a) {
+    console.log(a)
+  }
+
   render() {
     return (
       <div className = "listWrap">
@@ -20,9 +25,10 @@ class ListWrap extends Component {
             this.props.li.map((child, index) => {
               console.log(child)
               return (
-                <li key={index}>
-                  <div className="ListItem">
-                    <h2>child.title</h2>
+                <li key={index} onClick = {this.handleClick.bind(this, child.title)}>
+                  <div className="listItem">
+                    <h2>{child.title}</h2>
+                    <p>{child.info}</p>
                   </div>
                 </li>
               )
