@@ -15,6 +15,7 @@ class ListWrap extends Component {
 
   handleClick(a) {
     console.log(a)
+    console.log(this)
   }
 
   render() {
