@@ -20,7 +20,7 @@
   }
 ```
 即``constuctor``是类的默认方法，如果认为写进去的话就是它的**显示定义**。
-4. 类有自己的属性和方法，上面提到的``constuctor``就是一个默认方法，属性分为静态属性和示例属性：例子([study-03](https://github.com/daoyi7/r/blob/master/src/study/study-03/study-03.js))中的``state``是一个动态属性。动态属性只能写在``constuctor``方法内，静态属性写在``class``的大括号外。目前有一个关于属性的**提案**可以让动态属性不用必须写在``constuctor``里了。
+4. 类有自己的属性和方法，上面提到的``constuctor``就是一个默认方法，属性分为静态属性和实例属性：例子([study-03](https://github.com/daoyi7/r/blob/master/src/study/study-03/study-03.js))中的``state``是一个动态属性。动态属性只能写在``constuctor``方法内，静态属性写在``class``的大括号外。目前有一个关于属性的**提案**可以让动态属性不用必须写在``constuctor``里了。
 所以例子里还有另一种写法。
 ```javascript
   //state
@@ -32,12 +32,16 @@
   //   }
   // }
 
+  // 静态属性
   state = {
     value: 'World'
   }
   changeValue = this.changeValue.bind(this)
+  
+  ...
+  
 ```
 5. 类的方法内部中会有很多``this``，这些``this``默认是指向类的实例。但是当方法单独拿出来使用的时候，``this``的指向就变成了这个方法运行时所在的环境（就是跟之前一个普通的function方法的this指向一样），例如本例子（[study-03](https://github.com/daoyi7/r/blob/master/src/study/study-03/study-03.js)）中的``changeValue``方法，如果把它单独拿出来用的话，那么它指向的会是``input``，很显然对于我们这个例子是不对的。所以我们需要在构造方法中绑定这个``this``改变它的指向，这是一个最简单的方法了。
 
 
-参考阮一峰老师的es6入门：[http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class](http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class)
+参考阮一峰老师的es6入门：[http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class#Class-的静态属性和实例属性](http://es6.ruanyifeng.com/?search=constructor&x=0&y=0#docs/class#Class-的静态属性和实例属性)
