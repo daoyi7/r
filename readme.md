@@ -30,4 +30,5 @@
 - 28 元素的重排和重绘 [https://github.com/daoyi7/r/tree/master/src/study/study-28](https://github.com/daoyi7/r/blob/master/src/study/study-28/study-28.js)
 - 29 ``ref``有两种写法 [https://github.com/daoyi7/r/tree/master/src/study/study-29](https://github.com/daoyi7/r/blob/master/src/study/study-29/study-29.js)
 - 30 ``React.createElement`` [https://github.com/daoyi7/r/tree/master/src/study/study-30](https://github.com/daoyi7/r/blob/master/src/study/study-30/study-30.js)
-- 31 用现有知识先一个简单列表页面 [https://github.com/daoyi7/r/tree/master/src/study/study-31](https://github.com/daoyi7/r/blob/master/src/study/study-31/study-31.js)
+- 31 用现有知识写一个简单列表页面 [https://github.com/daoyi7/r/tree/master/src/study/study-31](https://github.com/daoyi7/r/blob/master/src/study/study-31/study-31.js)
+- 32 ``setState``方法传递参数实现数学计算 [https://github.com/daoyi7/r/tree/master/src/study/study-32](https://github.com/daoyi7/r/blob/master/src/study/study-32/study-32.js)
