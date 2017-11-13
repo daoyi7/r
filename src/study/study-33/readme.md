@@ -1,6 +1,6 @@
 ## 第三十三课
 
-一个建议评论功能
+一个简易评论功能
 
 这次的[例子](https://github.com/daoyi7/r/blob/master/src/study/study-33/study-33.js)代码比较长，分析一下一起分为四个组件。
 1. 父组件（用来存放整个项目的所有组件）
