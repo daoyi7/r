@@ -35,7 +35,8 @@ import './index.css';
 // import App from './study/study-31/study-31'                                  // 第31课
 // import App from './study/study-32/study-32'                                  // 第32课
 // import App from './study/study-33/study-33'                                  // 第33课
-import App from './study/study-34/study-34'                                 // 第34课
+// import App from './study/study-34/study-34'                                  // 第34课
+import App from './study/study-35/study-35'                                  // 第35课
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -72,5 +73,6 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<App />, document.getElementById('root'))                    // 第31课
 // ReactDOM.render(<App />, document.getElementById('root'))                    // 第32课
 // ReactDOM.render(<App />, document.getElementById('root'))                    // 第33课
-ReactDOM.render(<App />, document.getElementById('root'))                    // 第34课
+// ReactDOM.render(<App />, document.getElementById('root'))                    // 第34课
+ReactDOM.render(<App />, document.getElementById('root'))                    // 第35课
 registerServiceWorker();

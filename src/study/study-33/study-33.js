@@ -77,7 +77,8 @@ class ComponentList extends Component {
 
   static defaultProps = {
     comments: []
-  }
+  }                               // class 类的静态属性
+
 
   render() {
     return (
