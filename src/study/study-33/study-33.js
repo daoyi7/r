@@ -82,7 +82,11 @@ class ComponentInput extends Component {
         <div>
           <span>发表评论：</span>
           <div>
-            <textarea ref="content" value={this.state.content} onChange={this.changeContenFn} />
+            <textarea
+              ref="content"
+              value={this.state.content}
+              onChange={this.changeContenFn}
+              />
           </div>
         </div>
         <div>
@@ -112,7 +116,6 @@ class ComponentList extends Component {
     comments: []
   }                               // class 类的静态属性
 
-
   render() {
     return (
       <div>
@@ -134,7 +137,6 @@ export default class CommentApp extends Component {
   submitClickAppFn = this.submitClickAppFn.bind(this)
 
   submitClickAppFn(comment) {
-    console.log(comment)
     this.state.comments.push(comment)
     this.setState({
       comments: this.state.comments
