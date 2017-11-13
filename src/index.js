@@ -33,7 +33,8 @@ import './index.css';
 // import App from './study/study-29/study-29'                                  // 第29课
 // import App from './study/study-30/study-30'                                  // 第30课
 // import App from './study/study-31/study-31'                                  // 第31课
-import App from './study/study-32/study-32'                                 // 第32课
+// import App from './study/study-32/study-32'                                  // 第32课
+import App from './study/study-33/study-33'                                 // 第33课
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
