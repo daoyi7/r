@@ -7,6 +7,10 @@ class ComponentInput extends Component {
     content: '',
   }
 
+  componentDidMount() {
+    this.refs.username.focus()
+  }
+
   changeUsernameFn = this.changeUsernameFn.bind(this)
 
   changeUsernameFn(e) {
@@ -43,13 +47,13 @@ class ComponentInput extends Component {
         <div>
           <span>用户名：</span>
           <div>
-            <input value={this.state.username} onChange={this.changeUsernameFn} />
+            <input ref="username" value={this.state.username} onChange={this.changeUsernameFn} />
           </div>
         </div>
         <div>
           <span>发表评论：</span>
           <div>
-            <textarea value={this.state.content} onChange={this.changeContenFn} />
+            <textarea ref="content" value={this.state.content} onChange={this.changeContenFn} />
           </div>
         </div>
         <div>
