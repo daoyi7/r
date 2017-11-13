@@ -27,3 +27,42 @@
 5. 要尽量少写`state`,都写`props`。因为每一有一个`state`就代表要多维护一个组件状态，这样对于以后维护起来就很麻烦。
 
 6. 前面也提到过了`JSX`是`javascript`的一个对象的存在，它里面既可以写方法（包括带参数的方法），也可以写`HTML`标签。
+
+
+
+为表单添加更好的用户体验
+1. 页面一打开自动聚焦到评论框
+```javascript
+
+  componentDidMount() {
+    this.refs.content.focus()
+  }
+```
+
+2. 当用户输入完用户名以后，把输入的内容存到浏览器缓存中，并在重新打开页面的时候自动填写用户名
+```javascript
+
+  _saveUsernameToLocalStorage(username) {
+    localStorage.setItem('username', username)              // 自定义函数把数据存到浏览器缓存中
+  }
+
+  usernameBlur = this.usernameBlur.bind(this)
+
+  usernameBlur(e) {
+    this._saveUsernameToLocalStorage(e.target.value)      // 失去焦点后执行自定义函数
+  }
+
+  _loadUsername() {
+    const username = localStorage.getItem('username')
+
+    if(username) {
+      this.setState({
+        username: username                                // 从缓存中获取数据并自动填写到`input` 框中
+      })
+    }
+  }
+
+  componentWillMount() {
+    this._loadUsername()                                  // 组件挂在前调用自定义函数
+  }
+```

@@ -7,10 +7,6 @@ class ComponentInput extends Component {
     content: '',
   }
 
-  componentDidMount() {
-    this.refs.username.focus()
-  }
-
   changeUsernameFn = this.changeUsernameFn.bind(this)
 
   changeUsernameFn(e) {
@@ -41,13 +37,46 @@ class ComponentInput extends Component {
     })
   }
 
+  _saveUsernameToLocalStorage(username) {
+    localStorage.setItem('username', username)              // 自定义函数把数据存到浏览器缓存中
+  }
+
+  usernameBlur = this.usernameBlur.bind(this)
+
+  usernameBlur(e) {
+    this._saveUsernameToLocalStorage(e.target.value)      // 失去焦点后执行自定义函数
+  }
+
+  _loadUsername() {
+    const username = localStorage.getItem('username')
+
+    if(username) {
+      this.setState({
+        username: username                                // 从缓存中获取数据并自动填写到`input` 框中
+      })
+    }
+  }
+
+  componentWillMount() {
+    this._loadUsername()                                  // 组件挂在前调用自定义函数
+  }
+
+  componentDidMount() {
+    this.refs.content.focus()
+  }
+
   render() {
     return (
       <div>
         <div>
           <span>用户名：</span>
           <div>
-            <input ref="username" value={this.state.username} onChange={this.changeUsernameFn} />
+            <input
+              ref="username"
+              value={this.state.username}
+              onChange={this.changeUsernameFn}
+              onBlur={this.usernameBlur}                // 失去焦点
+              />
           </div>
         </div>
         <div>
