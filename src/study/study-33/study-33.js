@@ -5,6 +5,7 @@ class ComponentInput extends Component {
   state = {
     username: '',
     content: '',
+    updateTime: new Date().toLocaleTimeString()
   }
 
   changeUsernameFn = this.changeUsernameFn.bind(this)
@@ -27,13 +28,18 @@ class ComponentInput extends Component {
 
   submitClickFn() {
     if(this.props.onSubmit) {
-      const { username, content } = this.state
-      this.props.onSubmit({ username, content })
+      const { username, content, updateTime } = this.state
+      this.props.onSubmit({
+        username,
+        content,
+        updateTime
+       })
     }
 
     this.setState({
       content: '',
-      username: ''
+      username: '',
+      updateTime: new Date().toLocaleTimeString()
     })
   }
 
@@ -98,13 +104,15 @@ class ComponentInput extends Component {
 }
 
 class Comment extends Component {
+
   render() {
     return (
       <div>
         <div>
-          <span>{this.props.comment.username}</span>
+          <p><span>用户名：</span>{this.props.comment.username}</p>
         </div>
-        <p>{this.props.comment.content}</p>
+        <p><span>正文：</span>{this.props.comment.content}</p>
+        <p>{this.props.comment.updateTime}</p>
       </div>
     )
   }
@@ -138,6 +146,19 @@ export default class CommentApp extends Component {
 
   submitClickAppFn(comment) {
     this.state.comments.push(comment)
+    this._saveCommentsToLocalStorage(comment)
+    this.setState({
+      comments: this.state.comments
+    })
+  }
+
+  _saveCommentsToLocalStorage(comment) {
+    localStorage.setItem('comments', JSON.stringify(comment))
+  }
+
+  componentWillMount() {
+    const commentLS = JSON.parse(localStorage.getItem('comments'))
+    this.state.comments.push(commentLS)
     this.setState({
       comments: this.state.comments
     })
