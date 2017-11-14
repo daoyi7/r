@@ -66,3 +66,6 @@
     this._loadUsername()                                  // 组件挂在前调用自定义函数
   }
 ```
+3. 评论内容的时间
+4. 点击删除按钮即删除当前评论
+react中父组件传递时间到子组件必须要接收参数案例在[study-36](https://github.com/daoyi7/r/blob/master/src/study/study-36/study-36.js).**这里需要注意，如果我在父组件的`clickDeleteChild`方法里只对`comments`做处理的话，子组件并不会发生变化。这是因为组件中的**状态值**并没有发生变化，没有发生变化的情况下组件就不会发生重新渲染的，那么子组件也就不会变化。**

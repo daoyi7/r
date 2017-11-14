@@ -2,15 +2,11 @@ import React, {Component} from 'react'
 
 class Child extends Component {
 
-  state = {
-    count: 1
-  }
-
   clickFn = this.clickFn.bind(this)
 
   clickFn() {
     if(this.props.activeChild) {
-      this.props.onclickChild(this.state.count)
+      this.props.clickChild
     }
   }
 
@@ -31,8 +27,8 @@ export default class App extends Component {
 
   clickChild = this.clickChild.bind(this)
 
-  clickChild(index) {
-    console.log(index)
+  clickChild() {
+    console.log(1)
   }
 
   render() {

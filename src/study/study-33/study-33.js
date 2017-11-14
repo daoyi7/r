@@ -108,23 +108,20 @@ class Comment extends Component {
   clickDeleteFn = this.clickDeleteFn.bind(this)
 
   clickDeleteFn(e) {
-    console.log(1)
+    console.log(this.props.activeChild)
     this.props.onClickDeleteChild(this.props.index)
   }
 
   render() {
     return (
-      // this.props.activeComment
-      // ?
+      <div>
         <div>
-          <div>
-            <p><span>用户名：</span>{this.props.comment.username}</p>
-          </div>
-          <p><span>正文：</span>{this.props.comment.content}</p>
-          <p>{this.props.comment.updateTime}</p>
-          <button onClick = {this.clickDeleteFn}>删除</button>
+          <p><span>用户名：</span>{this.props.comment.username}</p>
         </div>
-      // : null
+        <p><span>正文：</span>{this.props.comment.content}</p>
+        <p>{this.props.comment.updateTime}</p>
+        <button onClick = {this.clickDeleteFn}>删除</button>
+      </div>
     )
   }
 }
@@ -145,8 +142,10 @@ class ComponentList extends Component {
     this.setState({
       active: this.state.active
     })
-    if(this.state.active)
+    if(this.state.active) {
       this.props.comments.splice(index, 1)
+    }
+    console.log(this.props.comments)
   }
 
   render() {
@@ -156,6 +155,7 @@ class ComponentList extends Component {
           this.props.comments.map(
             (comment, i) =>
             <Comment
+              activeChild={this.state.active}
               onClickDeleteChild={this.clickDeleteChild}
               index={i}
               key={i}
