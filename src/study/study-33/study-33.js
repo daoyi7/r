@@ -105,15 +105,26 @@ class ComponentInput extends Component {
 
 class Comment extends Component {
 
+  clickDeleteFn = this.clickDeleteFn.bind(this)
+
+  clickDeleteFn(e) {
+    console.log(1)
+    this.props.onClickDeleteChild(this.props.index)
+  }
+
   render() {
     return (
-      <div>
+      // this.props.activeComment
+      // ?
         <div>
-          <p><span>用户名：</span>{this.props.comment.username}</p>
+          <div>
+            <p><span>用户名：</span>{this.props.comment.username}</p>
+          </div>
+          <p><span>正文：</span>{this.props.comment.content}</p>
+          <p>{this.props.comment.updateTime}</p>
+          <button onClick = {this.clickDeleteFn}>删除</button>
         </div>
-        <p><span>正文：</span>{this.props.comment.content}</p>
-        <p>{this.props.comment.updateTime}</p>
-      </div>
+      // : null
     )
   }
 }
@@ -124,13 +135,34 @@ class ComponentList extends Component {
     comments: []
   }                               // class 类的静态属性
 
+  state = {
+    active: true
+  }
+
+  clickDeleteChild = this.clickDeleteChild.bind(this)
+
+  clickDeleteChild(index) {
+    this.setState({
+      active: this.state.active
+    })
+    if(this.state.active)
+      this.props.comments.splice(index, 1)
+  }
+
   render() {
     return (
       <div>
-        {this.props.comments.map(
-          (comment, i) =>
-          <Comment key={i} comment= {comment}/>
-        )}
+        {
+          this.props.comments.map(
+            (comment, i) =>
+            <Comment
+              onClickDeleteChild={this.clickDeleteChild}
+              index={i}
+              key={i}
+              comment={comment}
+            />
+          )
+        }
       </div>
     )
   }
