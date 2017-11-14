@@ -34,4 +34,6 @@
 - 32 ``setState``方法传递参数实现数学计算 [https://github.com/daoyi7/r/tree/master/src/study/study-32](https://github.com/daoyi7/r/blob/master/src/study/study-32/study-32.js)
 - 33 一个简易评论功能 [https://github.com/daoyi7/r/tree/master/src/study/study-33](https://github.com/daoyi7/r/blob/master/src/study/study-33/study-33.js)
 - 34 `dangerouslySetInnerHTML` [https://github.com/daoyi7/r/tree/master/src/study/study-34](https://github.com/daoyi7/r/blob/master/src/study/study-34/study-34.js)
-- 35 `dangerouslySetInnerHTML` [https://github.com/daoyi7/r/tree/master/src/study/study-35](https://github.com/daoyi7/r/blob/master/src/study/study-35/study-35.js)
+- 35 `propTypes`和`.isRequired` [https://github.com/daoyi7/r/tree/master/src/study/study-35](https://github.com/daoyi7/r/blob/master/src/study/study-35/study-35.js)
+- 36 子组件接收父组件传递过来的方法 [https://github.com/daoyi7/r/tree/master/src/study/study-36](https://github.com/daoyi7/r/blob/master/src/study/study-36/study-36.js)
+- 37 高阶组件(Higher-Order Components) [https://github.com/daoyi7/r/tree/master/src/study/study-37](https://github.com/daoyi7/r/blob/master/src/study/study-37/study-37.js)
