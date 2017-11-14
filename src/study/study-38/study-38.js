@@ -17,10 +17,28 @@ export default class Index extends Component {
     }
   }
 
+  changeGreen = this.changeGreen.bind(this)
+
+  changeGreen() {
+    this.setState({
+      color: 'green'
+    })
+  }
+
+  changePink = this.changePink.bind(this)
+
+  changePink() {
+    this.setState({
+      color: 'pink'
+    })
+  }
+
   render() {
     return (
       <div>
         <Header themeColor = {this.state.color}/>
+        <button onClick={this.changeGreen}>绿色</button>
+        <button onClick={this.changePink}>粉色</button>
       </div>
     )
   }
