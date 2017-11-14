@@ -37,3 +37,4 @@
 - 35 `propTypes`和`.isRequired` [https://github.com/daoyi7/r/tree/master/src/study/study-35](https://github.com/daoyi7/r/blob/master/src/study/study-35/study-35.js)
 - 36 子组件接收父组件传递过来的方法 [https://github.com/daoyi7/r/tree/master/src/study/study-36](https://github.com/daoyi7/r/blob/master/src/study/study-36/study-36.js)
 - 37 高阶组件(Higher-Order Components) [https://github.com/daoyi7/r/tree/master/src/study/study-37](https://github.com/daoyi7/r/blob/master/src/study/study-37/study-37.js)
+- 38 react中的`context` [https://github.com/daoyi7/r/tree/master/src/study/study-38](https://github.com/daoyi7/r/blob/master/src/study/study-38/study-38.js)
