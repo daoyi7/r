@@ -38,6 +38,8 @@
 
 不过 `HashRouter` 不支持 `location.key` 和 `location.state`这些方法，因此官方更推荐使用 `BrowserRouter`。
 
+**这里需要注意一点，就是 `BrowserRouter` 、 `HashRouter` 里面可以写 `DIV` 但是每个 `Router` 只能有一级DOM**
+
 `BrowserRouter` 或者 `HashRouter` 有两个比较重要的属性 `basename`、 `forceRefresh`。其中 `basename` 表示当前组件的路由.
 例如 `<HashRouter basename="/aa"></HashRouter>` ,那么这个路由组件（其他很多教程里都提到过了，路由本身也是一个组件( **At its heart, React Router is a component.** )，自身的路由地址呢就是 `/aa` 。
 
